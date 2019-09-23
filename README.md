@@ -67,6 +67,14 @@ lambda function demo
     - Create a SQS which will be acting as a DLQ.
     - Need to add this "SQS: Write: SendMessage" policy as inline policy on the lambda role.
 
+# CalculateSquare
+    - Demonstrating invoking a lambda function from another lambda function.
+    - We use lambda.invoke method to do this.
+    - For invoking a lambda function from another lambda function; the caller lambda role needs
+      this "Lambda : Write : invokeFunction" policy to be added as inline policy.
+
+
+
 
 
 
