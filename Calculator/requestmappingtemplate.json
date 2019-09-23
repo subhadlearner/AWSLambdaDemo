@@ -1,0 +1,7 @@
+{
+    "operation": "$input.params('operation')",
+    "input": {
+      "operand1": $input.json('$.num1'),
+      "operand2": $input.json('$.num2')
+    }
+}
