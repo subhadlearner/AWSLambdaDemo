@@ -61,6 +61,14 @@ lambda function demo
     - Traffic shifting using lambda alias and versions.
     - Canary deployment using API GW.
 
+# DLQDemo
+    - Demonstrate retry mechanism of AWS lambda if invoked asynchronously.
+    - Create an SNS event trigger.
+    - Create a SQS which will be acting as a DLQ.
+    - Need to add this "SQS: Write: SendMessage" policy as inline policy on the lambda role.
+
+
+
 
 
 
