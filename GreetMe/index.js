@@ -19,7 +19,7 @@ exports.handler = async (event) => {
     let response = {
         message: message,
         info: info,
-        timestamp: moment.unix()
+        timestamp: moment().unix()
     };
     return {
         statusCode: 200,
