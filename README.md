@@ -52,6 +52,19 @@ lambda function demo
         . We will create a JSON schema model and selecting the model to the http method from the Integration Request -> Mapping Template section of API GW.
         . We will modify the apache velocity template to use the newly added model.
 
+# EventLogger
+    - Demonstrating lambda versions with API GW. Challenges of lambda version.
+    - Add stage information from $context object by going to Intigration Request -> Mapping  
+      Template 
+    - Demonstrating lambda Alias. Challenges of lambda alias.
+    - Using stage variable to dynamically change lambda alias name in API GW.
+    - Traffic shifting using lambda alias and versions.
+    - Canary deployment using API GW.
+
+
+
+
+
 
 
 
