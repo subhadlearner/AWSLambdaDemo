@@ -73,11 +73,17 @@ lambda function demo
     - For invoking a lambda function from another lambda function; the caller lambda role needs
       this "Lambda : Write : invokeFunction" policy to be added as inline policy.
 
-# LambdaAuthorizer
+# LambdaAuthorizer (Optional if time permits)
     - The blueprint code can be found here. https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints/blob/master/blueprints/nodejs/index.js
     - Create a token from jwt.io and decode the token using jwt-decode. This will give the sub/principalid which in terms will be verified and decision whether the user has
       access/authority on the resource it is trying to consume.
     - Test it with the EventLogger API GW by assigning this lambda function as authorizer from Postman.
+
+# ResizeImage (Optional if time permits)
+    - This lambda function will be triggered when a specific s3 bucket gets some data uploaded. In this case an image.
+    - This lambda function will get the image and create a smaller version of the same image and upload it to a different s3 bucket.
+    - Make sure both the s3 bucket is created prior to work with this demo.
+    - This demo is using NodeJs 8.10.
 
 
 
