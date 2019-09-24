@@ -54,8 +54,8 @@ lambda function demo
 
 # EventLogger
     - Demonstrating lambda versions with API GW. Challenges of lambda version.
-    - Add stage information from $context object by going to Intigration Request -> Mapping  
-      Template 
+    - Add stage information from $context object by going to Intigration Request -> Mapping
+      Template
     - Demonstrating lambda Alias. Challenges of lambda alias.
     - Using stage variable to dynamically change lambda alias name in API GW.
     - Traffic shifting using lambda alias and versions.
@@ -72,6 +72,14 @@ lambda function demo
     - We use lambda.invoke method to do this.
     - For invoking a lambda function from another lambda function; the caller lambda role needs
       this "Lambda : Write : invokeFunction" policy to be added as inline policy.
+
+# LambdaAuthorizer
+    - The blueprint code can be found here. https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints/blob/master/blueprints/nodejs/index.js
+    - Create a token from jwt.io and decode the token using jwt-decode. This will give the sub/principalid which in terms will be verified and decision whether the user has
+      access/authority on the resource it is trying to consume.
+    - Test it with the EventLogger API GW by assigning this lambda function as authorizer from Postman.
+
+
 
 
 
