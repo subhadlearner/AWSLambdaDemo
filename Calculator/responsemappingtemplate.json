@@ -1,1 +1,1 @@
-{"result" : $input.json ('$.body')}
+"result": $input.json('$.body')
